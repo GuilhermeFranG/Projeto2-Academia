@@ -1,0 +1,108 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Imgs/shape.jpg");
+    background-color: #010101;
+    background-size: 100% 630px;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 90px;
+    color: #fff;
+    width: 32%;
+    margin: 50px 0 75px 80px;
+}
+
+main {
+    float: left;
+}
+
+
+
+
+.btnContainer {
+    font-size: 16px;
+    display: flex;
+    border: none;
+    color: #daf1f5;
+    padding: 10px;
+    width: 55%;
+    margin-left: 5vw;
+}
+
+#startBtn {
+    background-color: #02a3c6;
+    font-size: 16px;
+    padding: 12px 20px 8px 20px;
+    width: 40%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+}
+#startBtn:hover {
+    background-color: #0090b1;
+    color: #fff;
+}
+
+button {
+    background-color: #02a2c600;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    color: #eafbff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+button:before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    text-shadow: 1px 1px 2px #ccc;
+    width: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: brilhoTexto 5s ease-in infinite;
+}
+
+@keyframes brilhoTexto {
+    0%, 10%, 100% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+p { margin: 15px 15px 15px 25px; font-size: 20px; }
+
+span {
+    display: inline-block;
+    font-size: 10px;
+    color: #eafbff;
+    transform: scale(8, 2.3);
+    margin-left: 43px;
+    padding: 0 0 3px 0;
+}
+
+
+
+
+aside {
+    float: right;
+    margin: 13vh 5vw 30px 30px;
+}
+
+.imgBtn {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 25px;
+}
